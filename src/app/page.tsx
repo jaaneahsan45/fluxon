@@ -16,7 +16,19 @@ export default function Home() {
         Stake $FLX to earn rewards, boost your yield with legendary NFTs, and join a thriving community.
       </p>
 
-      {/* Call to Action Buttons */}
+      {/* NEW: Primary Join Presale Button */}
+      <div className="mb-10 w-full max-w-md">
+        <a
+          href="https://www.pinksale.finance/launchpad/polygon/0xDA1805582e9b778f7BaB2D07a6E923D5728e8618"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block w-full px-8 py-5 bg-gradient-to-r from-pink-500 to-purple-600 rounded-xl text-2xl font-black text-white hover:shadow-[0_0_30px_rgba(236,72,153,0.4)] hover:scale-105 transition-all animate-pulse text-center"
+        >
+          🚀 JOIN PRESALE NOW
+        </a>
+      </div>
+
+      {/* Existing Call to Action Buttons */}
       <div className="flex flex-col sm:flex-row gap-8 mb-20">
         <Link
           href="/staking"

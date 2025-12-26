@@ -1,3 +1,4 @@
+// src/app/layout.tsx
 'use client';
 import './globals.css';
 import { Providers } from './providers';
@@ -69,6 +70,18 @@ export default function RootLayout({
             </Link>
 
             <nav className="space-y-4">
+              {/* NEW: Join Presale Sidebar Item */}
+              <a
+                href="https://www.pinksale.finance/launchpad/polygon/0xDA1805582e9b778f7BaB2D07a6E923D5728e8618"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="flex items-center gap-3 py-4 px-4 rounded-xl bg-gradient-to-r from-pink-600 to-purple-700 text-white font-bold shadow-lg hover:shadow-pink-500/20 transition-all hover:-translate-y-1 mb-6 border border-white/5"
+              >
+                <span className="text-xl">🔥</span>
+                Join Presale
+              </a>
+
               {/* Only show "Home" link when NOT on homepage */}
               {!isHomePage && (
                 <Link
