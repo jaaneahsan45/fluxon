@@ -66,33 +66,55 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Social Links */}
-      <div className="mb-12">
+      {/* Social Links and Contact */}
+      <div className="mb-12 max-w-4xl w-full">
         <p className="text-xl text-gray-400 mb-6">Join the Fluxon Community</p>
-        <div className="flex justify-center gap-10">
+        <div className="flex flex-wrap justify-center gap-6">
           <a
-                  href="https://t.me/+ZNIsQjlXDMg3NGJk" 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-3 py-3 px-4 rounded-lg hover:bg-gray-700 transition-all text-lg font-medium text-gray-300 hover:text-cyan-400"
-                >
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M11.944 0C5.346 0 0 5.346 0 11.944c0 6.598 5.346 11.944 11.944 11.944 6.598 0 11.944-5.346 11.944-11.944C23.888 5.346 18.542 0 11.944 0zm5.206 8.19l-1.745 8.227c-.13.585-.478.728-.967.453l-2.661-1.961-1.283 1.235c-.142.142-.261.261-.535.261l.191-2.711 4.935-4.458c.214-.19-.047-.296-.332-.106l-6.098 3.84-2.628-.82c-.572-.178-.583-.572.12-.843l10.264-3.959c.475-.172.891.112.734.882z"/>
-                  </svg>
-                  Telegram
-                </a>
+            href="https://t.me/+ZNIsQjlXDMg3NGJk" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-3 py-3 px-6 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all text-lg font-medium text-gray-300 hover:text-cyan-400 border border-gray-700"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M11.944 0C5.346 0 0 5.346 0 11.944c0 6.598 5.346 11.944 11.944 11.944 6.598 0 11.944-5.346 11.944-11.944C23.888 5.346 18.542 0 11.944 0zm5.206 8.19l-1.745 8.227c-.13.585-.478.728-.967.453l-2.661-1.961-1.283 1.235c-.142.142-.261.261-.535.261l.191-2.711 4.935-4.458c.214-.19-.047-.296-.332-.106l-6.098 3.84-2.628-.82c-.572-.178-.583-.572.12-.843l10.264-3.959c.475-.172.891.112.734.882z"/>
+            </svg>
+            Telegram
+          </a>
 
-                <a
-                  href="https://x.com/fluxonpulse" 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-3 py-3 px-4 rounded-lg hover:bg-gray-700 transition-all text-lg font-medium text-gray-300 hover:text-cyan-400"
-                >
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-                  </svg>
-                  X (Twitter)
-                </a>
+          <a
+            href="https://x.com/fluxonpulse" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-3 py-3 px-6 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all text-lg font-medium text-gray-300 hover:text-cyan-400 border border-gray-700"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+            X (Twitter)
+          </a>
+
+          <a
+            href="mailto:admin@fluxon.icu"
+            className="flex items-center gap-3 py-3 px-6 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all text-lg font-medium text-gray-300 hover:text-cyan-400 border border-gray-700"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            Admin
+          </a>
+
+          <a
+            href="mailto:marketing@fluxon.icu"
+            className="flex items-center gap-3 py-3 px-6 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all text-lg font-medium text-gray-300 hover:text-cyan-400 border border-gray-700"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            Marketing
+          </a>
         </div>
       </div>
 

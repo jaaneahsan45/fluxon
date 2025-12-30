@@ -53,7 +53,7 @@ export default function RootLayout({
 
           {/* Sidebar */}
           <aside
-            className={`fixed left-0 top-0 bottom-0 w-64 bg-gray-800 p-6 transition-transform duration-300 z-50
+            className={`fixed left-0 top-0 bottom-0 w-64 bg-gray-800 p-6 transition-transform duration-300 z-50 overflow-y-auto
               ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'}
               lg:translate-x-0
             `}
@@ -156,6 +156,33 @@ export default function RootLayout({
                     <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
                   </svg>
                   X (Twitter)
+                </a>
+              </div>
+
+              {/* CONTACT SECTION */}
+              <div className="pt-4 mt-4 border-t border-gray-700 space-y-2">
+                <p className="px-4 text-[10px] font-bold text-gray-500 uppercase tracking-widest">Contact</p>
+                
+                <a
+                  href="mailto:admin@fluxon.icu"
+                  className="flex items-center gap-3 py-3 px-4 rounded-lg hover:bg-gray-700 transition-all text-sm font-medium text-gray-300 hover:text-cyan-400"
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                    <polyline points="22,6 12,13 2,6"/>
+                  </svg>
+                  admin@fluxon.icu
+                </a>
+
+                <a
+                  href="mailto:marketing@fluxon.icu"
+                  className="flex items-center gap-3 py-3 px-4 rounded-lg hover:bg-gray-700 transition-all text-sm font-medium text-gray-300 hover:text-cyan-400"
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                    <polyline points="22,6 12,13 2,6"/>
+                  </svg>
+                  marketing@fluxon.icu
                 </a>
               </div>
             </nav>
